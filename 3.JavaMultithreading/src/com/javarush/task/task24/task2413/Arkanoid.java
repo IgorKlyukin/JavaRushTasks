@@ -5,6 +5,11 @@ public class Arkanoid {
     private int width;  //ширина
     private int height; //высота
 
+    public Arkanoid(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
     public int getWidth() {
         return width;
     }
