@@ -24,7 +24,7 @@ public class Solution {
     }
 
     public static class Politician extends Thread {
-        private volatile int countSounds;
+        private int countSounds;
 
         public Politician(String name) {
             super(name);

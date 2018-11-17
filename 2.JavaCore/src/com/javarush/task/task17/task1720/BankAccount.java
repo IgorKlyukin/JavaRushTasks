@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class BankAccount {
     private BigDecimal balance;
-    private String owner;
+    //private String owner;
 
     public BankAccount(String owner) {
         this(BigDecimal.ZERO, owner);
@@ -12,7 +12,7 @@ public class BankAccount {
 
     public BankAccount(BigDecimal balance, String owner) {
         this.balance = balance;
-        this.owner = owner;
+        //this.owner = owner;
     }
 
     public synchronized void deposit(BigDecimal money) {

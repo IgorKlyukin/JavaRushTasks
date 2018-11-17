@@ -16,7 +16,7 @@ public class Solution {
         initExceptions();
 
         for (Exception exception : exceptions) {
-            System.out.println(exception);
+            exception.printStackTrace();
         }
     }
 

@@ -6,7 +6,7 @@ package com.javarush.task.task22.task2212;
 public class Solution {
     public static boolean checkTelNumber(String telNumber) {
         if (telNumber != null) {
-            if (telNumber.matches("^\\+[\\d|\\-|\\(|\\)]{12,16}")) {
+            if (telNumber.matches("^\\+[\\d|\\-\\(\\)]{12,16}")) {
                 if (telNumber.matches("^\\+\\d{12}")) return true;
                 if (telNumber.matches("^[\\+|\\d]+\\-\\d+") && telNumber.length() == 14) return true;
                 if (telNumber.matches("^[\\+|\\d]+\\-\\d+\\-\\d+") && telNumber.length() == 15) return true;
@@ -15,7 +15,7 @@ public class Solution {
                 if (telNumber.matches("^[\\+|\\d]+\\(\\d{3}\\)\\d*\\-\\d+\\-\\d+") && telNumber.length() == 17)
                     return true;
             }
-            if (telNumber.matches("^\\d[\\d|\\-|\\(|\\)]{9,13}")) {
+            if (telNumber.matches("^\\d[\\d|\\-\\(\\)]{9,13}")) {
                 if (telNumber.matches("^\\d{10}")) return true;
                 if (telNumber.matches("^\\d+\\-\\d+") && telNumber.length() == 11) return true;
                 if (telNumber.matches("^\\d+\\-\\d+\\-\\d+") && telNumber.length() == 12) return true;
