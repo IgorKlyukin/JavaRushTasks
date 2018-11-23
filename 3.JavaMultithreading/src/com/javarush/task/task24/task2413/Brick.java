@@ -5,6 +5,10 @@ public class Brick extends BaseObject{
         super(x, y, radius);
     }
 
+    public Brick(double x, double y) {
+        super(x, y, 3);
+    }
+
     @Override
     public void draw(Canvas canvas) {
 
