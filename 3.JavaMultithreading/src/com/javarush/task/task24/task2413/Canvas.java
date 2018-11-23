@@ -50,4 +50,17 @@ public class Canvas {
             }
         }
     }
+
+    void clear(){
+        matrix = new char[height+2][width+2];
+    }
+
+    void print(){
+        for (int i = 0, n = matrix.length; i < n; i++) {
+            for (int j = 0, m = matrix[i].length; j < m; j++) {
+                System.out.print(matrix[i][j]);
+            }
+            System.out.println();
+        }
+    }
 }
