@@ -17,6 +17,7 @@ public class Arkanoid {
     private Ball ball;
     // подставка
     private Stand stand;
+    static Canvas canvas;
 
     // игра закончена?
     private boolean isGameOver = false;
@@ -70,8 +71,8 @@ public class Arkanoid {
      */
     private void drawBorders(Canvas canvas) {
         // draw game
-        for (int i = 0; i < width + 2; i++) {
-            for (int j = 0; j < height + 2; j++) {
+        for (int i = 1; i < width + 1; i++) {
+            for (int j = 1; j < height + 1; j++) {
                 canvas.setPoint(i, j, '.');
             }
         }
@@ -93,7 +94,7 @@ public class Arkanoid {
      */
     void run() throws Exception {
         // Создаем холст для отрисовки.
-        Canvas canvas = new Canvas(width, height);
+        canvas = new Canvas(width, height);
 
         // Создаем объект "наблюдатель за клавиатурой" и стартуем его.
         KeyboardObserver keyboardObserver = new KeyboardObserver();
@@ -129,10 +130,14 @@ public class Arkanoid {
             // отрисовываем все объекты
             canvas.clear();
             draw(canvas);
-            canvas.print();
+            //canvas.print();
+            if (KeyboardObserver.frame != null) {
+                KeyboardObserver.frame.setContentPane(new Layer());
+                KeyboardObserver.frame.setVisible(true);
+            }
 
             // пауза
-            Thread.sleep(300);
+            Thread.sleep(5);
         }
 
         // Выводим сообщение "Game Over"
@@ -153,22 +158,34 @@ public class Arkanoid {
      */
     void checkBricksBump() {
         for (Brick brick : new ArrayList<Brick>(bricks)) {
-            if (ball.isIntersec(brick)) {
-                double angle = Math.random() * 360;
-                ball.setDirection(angle);
-
-                bricks.remove(brick);
+            switch (ball.isIntersec(brick)) {
+                case 1: {
+                    ball.setDy(-ball.getDy());
+                    bricks.remove(brick);
+                    break;}
+                case 2: {
+                    ball.setDx(-ball.getDx());
+                    bricks.remove(brick);
+                    break;}
+                case 3: {
+                    ball.setDx(-ball.getDx());
+                    bricks.remove(brick);
+                    break;}
+                case 4: {
+                    ball.setDy(-ball.getDy());
+                    bricks.remove(brick);
+                    break;}
             }
         }
     }
 
     /**
      * Проверяем столкновение с подставкой.
-     * Если столкновение было - шарик отлетает в случайном направлении  вверх 80..100 градусов.
+     * Если столкновение было - шарик отлетает в случайном направлении  вверх 70..110 градусов.
      */
     void checkStandBump() {
-        if (ball.isIntersec(stand)) {
-            double angle = 90 + 20 * (Math.random() - 0.5);
+        if (ball.isIntersec(stand) != 0) {
+            double angle = 90 + 40 * (Math.random() - 0.5);
             ball.setDirection(angle);
         }
     }
@@ -178,7 +195,7 @@ public class Arkanoid {
      * Если да - игра окончена (isGameOver = true)
      */
     void checkEndGame() {
-        if (ball.getY() > height && ball.getDy() > 0)
+        if (ball.getY() + 1 > height + 1 && ball.getDy() > 0)
             isGameOver = true;
     }
 
@@ -201,18 +218,21 @@ public class Arkanoid {
     public static Arkanoid game;
 
     public static void main(String[] args) throws Exception {
-        game = new Arkanoid(20, 30);
+        int w = 40;
+        int h = 60;
+        game = new Arkanoid(w, h);
 
-        Ball ball = new Ball(10, 29, 2, 95);
+        Ball ball = new Ball(w/2, h-1, .1, 95);
         game.setBall(ball);
 
-        Stand stand = new Stand(10, 30);
+        Stand stand = new Stand(w/2, h);
         game.setStand(stand);
 
-        game.getBricks().add(new Brick(3, 3));
-        game.getBricks().add(new Brick(7, 5));
-        game.getBricks().add(new Brick(12, 5));
-        game.getBricks().add(new Brick(16, 3));
+        for (int i = 3; i < w; i+=4) {
+            for (int j = 3; j < 50; j+=4) {
+                game.getBricks().add(new Brick(i, j));
+            }
+        }
 
         game.run();
     }

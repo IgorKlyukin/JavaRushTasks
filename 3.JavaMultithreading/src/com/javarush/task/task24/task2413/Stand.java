@@ -14,7 +14,7 @@ public class Stand extends BaseObject {
     };
 
     //скорость
-    private double speed = 1;
+    private double speed = .1;
     //направление (-1 влево, +1 вправо)
     private double direction = 0;
 
