@@ -1,4 +1,4 @@
-package com.javarush.task.task24.task2413;
+package com.javarush.task.task23.task2413;
 
 /**
  * Подставка, с помощью которой отражаем мячик.
