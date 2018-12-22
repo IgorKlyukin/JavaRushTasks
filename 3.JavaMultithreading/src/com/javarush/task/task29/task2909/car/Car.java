@@ -18,7 +18,7 @@ public class Car {
     private boolean driverAvailable;
     private int numberOfPassengers;
 
-    public Car(int type, int numberOfPassengers) {
+    protected Car(int type, int numberOfPassengers) {
         this.type = type;
         this.numberOfPassengers = numberOfPassengers;
     }
@@ -78,5 +78,17 @@ public class Car {
         if (type == SEDAN)
             return 120;
         return 90;
+    }
+
+    static public Car create(int type, int numberOfPassengers){
+        switch (type){
+            case 0:{ return new Truck(numberOfPassengers);
+            }
+            case 1:{ return new Sedan(numberOfPassengers);
+            }
+            case 2:{ return new Cabriolet(numberOfPassengers);
+            }
+            default: return null;
+        }
     }
 }
