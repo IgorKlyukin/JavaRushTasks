@@ -30,17 +30,6 @@ public class Student extends UniversityPerson {
         averageGrade += 0.2;
     }
 
-    public void setValue(String name, double value) {
-        if (name.equals("averageGrade")) {
-            averageGrade = value;
-            return;
-        }
-        if (name.equals("course")) {
-            course = (int) value;
-            return;
-        }
-    }
-
     public void setBeginningOfSession(int day, int month, int year) {
         beginningOfSession = new Date(year, month, day);
     }
@@ -53,8 +42,16 @@ public class Student extends UniversityPerson {
         return averageGrade;
     }
 
+    public void setAverageGrade(double averageGrade) {
+        this.averageGrade = averageGrade;
+    }
+
     public int getCourse() {
         return course;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
     }
 
     @Override
