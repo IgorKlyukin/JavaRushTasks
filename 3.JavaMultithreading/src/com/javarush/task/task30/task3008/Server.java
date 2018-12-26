@@ -30,6 +30,28 @@ public class Server {
             this.socket = socket;
         }
 
+        @Override
+        public void run() {
+            String userName = null;
+            ConsoleHelper.writeMessage("Connected with address " + socket.getRemoteSocketAddress());
+            try (Connection connection = new Connection(socket)){
+                userName = serverHandshake(connection);
+                sendBroadcastMessage(new Message(MessageType.USER_ADDED, userName));
+                sendListOfUsers(connection, userName);
+                serverMainLoop(connection, userName);
+            }
+            catch (IOException | ClassNotFoundException e) {
+                ConsoleHelper.writeMessage(e.getMessage());
+            }
+            finally {
+                if (userName != null) {
+                    connectionMap.remove(userName);
+                    sendBroadcastMessage(new Message(MessageType.USER_REMOVED, userName));
+                }
+                ConsoleHelper.writeMessage("Connection " + userName + " is close");
+            }
+        }
+
         private String serverHandshake(Connection connection) throws IOException, ClassNotFoundException {
             while (true) {
                 connection.send(new Message(MessageType.NAME_REQUEST));
