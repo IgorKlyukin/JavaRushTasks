@@ -69,6 +69,44 @@ public class Client {
                 Client.this.notify();
             }
         }
+
+        protected void clientHandshake() throws IOException, ClassNotFoundException {
+            MessageType message;
+            while (true) {
+                message = connection.receive().getType();
+                if (message == MessageType.NAME_REQUEST) {
+                    connection.send(new Message(MessageType.USER_NAME, getUserName()));
+                }
+                else if (message == MessageType.NAME_ACCEPTED) {
+                    notifyConnectionStatusChanged(true);
+                    break;
+                }
+                else {
+                    throw new IOException("Unexpected MessageType");
+                }
+            }
+        }
+
+        protected void clientMainLoop() throws IOException, ClassNotFoundException {
+            MessageType messageType;
+            Message message;
+            while (true) {
+                message = connection.receive();
+                messageType = message.getType();
+                if (messageType == MessageType.TEXT) {
+                    processIncomingMessage(message.getData());
+                }
+                else if (messageType == MessageType.USER_ADDED) {
+                    informAboutAddingNewUser(message.getData());
+                }
+                else if (messageType == MessageType.USER_REMOVED) {
+                    informAboutDeletingNewUser(message.getData());
+                }
+                else {
+                    throw new IOException("Unexpected MessageType");
+                }
+            }
+        }
     }
 
     protected String getServerAddress() {
