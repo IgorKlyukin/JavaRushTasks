@@ -10,8 +10,7 @@ public class ClientGuiController extends Client {
 
     @Override
     public void run() {
-        SocketThread socketThread = getSocketThread();
-        socketThread.run();
+        getSocketThread().run();
     }
 
     public class GuiSocketThread extends SocketThread {
