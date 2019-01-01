@@ -15580,3 +15580,101 @@ java.lang.IndexOutOfBoundsException: Wrong offset: 1760; documentLength: 1725; d
 2019-01-01 22:59:04 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
 2019-01-01 22:59:07 INFO  ApacheHttpClient.completed(27) - responseCode = 200
 2019-01-01 22:59:07 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-01 22:59:27 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-01 22:59:27 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-01 22:59:44 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 22:59:45 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-01 22:59:48 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-01 22:59:52 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-01 22:59:52 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-01 22:59:54 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-01 22:59:54 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-01 22:59:54 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 22:59:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:00:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:01:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:02:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:03:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:04:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:05:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:06:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:07:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:08:57 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:09:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:10:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:11:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:12:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:13:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:14:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:15:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:16:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:17:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:18:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:19:12 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-01 23:19:12 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-01 23:19:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:20:57 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:21:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:22:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:23:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:24:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:25:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:26:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:27:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:28:35 ERROR PluginManager.error(115) - Wrong offset: 1931; documentLength: 1924; C:\temp\qwe
+java.lang.IndexOutOfBoundsException: Wrong offset: 1931; documentLength: 1924; C:\temp\qwe
+	at com.intellij.openapi.editor.impl.DocumentImpl.insertString(DocumentImpl.java:517)
+	at com.intellij.execution.impl.ConsoleViewImpl.doInsertUserInput(ConsoleViewImpl.java:1461)
+	at com.intellij.execution.impl.ConsoleViewImpl.insertUserText(ConsoleViewImpl.java:1438)
+	at com.intellij.execution.impl.ConsoleViewImpl.type(ConsoleViewImpl.java:1195)
+	at com.intellij.execution.impl.ConsoleViewImpl.access$1500(ConsoleViewImpl.java:85)
+	at com.intellij.execution.impl.ConsoleViewImpl$PasteHandler.execute(ConsoleViewImpl.java:1246)
+	at com.intellij.execution.impl.ConsoleViewImpl$ConsoleAction.actionPerformed(ConsoleViewImpl.java:1205)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil$1.run(ActionUtil.java:255)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAware(ActionUtil.java:272)
+	at com.intellij.openapi.keymap.impl.IdeKeyEventDispatcher$1.performAction(IdeKeyEventDispatcher.java:620)
+	at com.intellij.openapi.keymap.impl.IdeKeyEventDispatcher.lambda$processAction$2(IdeKeyEventDispatcher.java:669)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:195)
+	at com.intellij.openapi.keymap.impl.IdeKeyEventDispatcher.processAction(IdeKeyEventDispatcher.java:668)
+	at com.intellij.openapi.keymap.impl.IdeKeyEventDispatcher.processActionOrWaitSecondStroke(IdeKeyEventDispatcher.java:520)
+	at com.intellij.openapi.keymap.impl.IdeKeyEventDispatcher.inInitState(IdeKeyEventDispatcher.java:475)
+	at com.intellij.openapi.keymap.impl.IdeKeyEventDispatcher.dispatchKeyEvent(IdeKeyEventDispatcher.java:212)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:697)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:382)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2019-01-01 23:28:35 ERROR PluginManager.logErrorHeader(120) - IntelliJ IDEA 2018.2.6  Build #IC-182.5107.16
+2019-01-01 23:28:35 ERROR PluginManager.logErrorHeader(126) - JDK: 1.8.0_152-release
+2019-01-01 23:28:35 ERROR PluginManager.logErrorHeader(127) - VM: OpenJDK 64-Bit Server VM
+2019-01-01 23:28:35 ERROR PluginManager.logErrorHeader(128) - Vendor: JetBrains s.r.o
+2019-01-01 23:28:35 ERROR PluginManager.logErrorHeader(129) - OS: Windows 10
+2019-01-01 23:28:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:29:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:30:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:31:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:32:55 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 23:32:55 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-01 23:32:56 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 23:32:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:32:58 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-01 23:33:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:34:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:35:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:36:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:37:56 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-01 23:38:12 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 23:38:13 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-01 23:38:13 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 23:38:15 INFO  ApacheHttpClient.completed(27) - responseCode = 405
+2019-01-01 23:38:15 ERROR TaskCompleted.run(130) - Ошибка во время проверки задания!
+
+ StatusCode: 405 Not Allowed : com.fasterxml.jackson.core.JsonParseException
+2019-01-01 23:38:22 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 23:38:22 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-01 23:38:22 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-01 23:38:24 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-01 23:38:24 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
