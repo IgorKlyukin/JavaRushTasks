@@ -141,43 +141,39 @@ public class ZipFileManager {
 
         // Создаем временный файл
         Path tempZipFile = Files.createTempFile(null, null);
-        List<String> listZipEntry = new ArrayList<>();
+        List<Path> archiveFiles = new ArrayList<>();
 
         try (ZipOutputStream zipOutputStream = new ZipOutputStream(Files.newOutputStream(tempZipFile))) {
             try (ZipInputStream zipInputStream = new ZipInputStream(Files.newInputStream(zipFile))) {
 
                 ZipEntry zipEntry = zipInputStream.getNextEntry();
                 while (zipEntry != null) {
-
                     String fileName = zipEntry.getName();
-                    listZipEntry.add(fileName);
-                    zipOutputStream.putNextEntry(new ZipEntry(fileName));
+                    archiveFiles.add(Paths.get(fileName));
 
+                    zipOutputStream.putNextEntry(new ZipEntry(fileName));
                     copyData(zipInputStream, zipOutputStream);
 
-                    zipOutputStream.closeEntry();
                     zipInputStream.closeEntry();
+                    zipOutputStream.closeEntry();
 
                     zipEntry = zipInputStream.getNextEntry();
                 }
+            }
 
-                for (Path paths :
-                        absolutePathList) {
-                    if (Files.isRegularFile(paths)) {
-                        if (!listZipEntry.contains(paths.getFileName().toString())) {
-                            // Если архивируем отдельный файл, то нужно получить его директорию и имя
-                            addNewZipEntry(zipOutputStream, paths.getParent(), paths.getFileName());
-                            ConsoleHelper.writeMessage(String.format("Файл '%s' добавлен в архив.", paths.toString()));
-                        }
-                        else {
-                            ConsoleHelper.writeMessage("Такой файл уже есть в архиве.");
-                        }
-                    }
+            // Архивируем новые файлы
+            for (Path file : absolutePathList) {
+                if (Files.isRegularFile(file))
+                {
+                    if (archiveFiles.contains(file.getFileName()))
+                        ConsoleHelper.writeMessage(String.format("Файл '%s' уже существует в архиве.", file.toString()));
                     else {
-                        // Если переданный source не директория и не файл, бросаем исключение
-                        throw new PathIsNotFoundException();
+                        addNewZipEntry(zipOutputStream, file.getParent(), file.getFileName());
+                        ConsoleHelper.writeMessage(String.format("Файл '%s' добавлен в архиве.", file.toString()));
                     }
                 }
+                else
+                    throw new PathIsNotFoundException();
             }
         }
 
