@@ -17568,3 +17568,34 @@ java.lang.IndexOutOfBoundsException: Wrong offset: 1931; documentLength: 1924; C
 2019-01-03 17:29:58 INFO  ApacheHttpClient.completed(27) - responseCode = 200
 2019-01-03 17:29:58 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
 2019-01-03 17:30:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:30:13 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-03 17:30:13 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-03 17:30:20 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-03 17:30:20 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-03 17:30:25 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-03 17:30:27 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-03 17:30:27 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-03 17:30:29 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-03 17:30:29 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-03 17:30:30 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-03 17:31:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:32:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:33:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:34:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:35:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:36:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:36:49 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-03 17:36:49 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-03 17:36:49 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-03 17:36:51 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-03 17:36:51 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-03 17:36:52 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-03 17:37:05 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-03 17:37:24 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-03 17:37:24 WARN  JavaRushUtil.getCurrentTask(70) - Ошибка получения ключа задачи.
+2019-01-03 17:37:24 WARN  JavaRushUtil.getCurrentDirectory(101) - Ошибка получения текущей директории.
+2019-01-03 17:37:24 WARN  JavaRushUtil.getCurrentDirectory(101) - Ошибка получения текущей директории.
+2019-01-03 17:37:24 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-03 17:37:25 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-03 17:37:26 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-03 17:37:26 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
