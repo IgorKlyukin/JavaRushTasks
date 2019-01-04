@@ -1,12 +1,12 @@
 package com.javarush.task.task32.task3209;
 
+import jdk.jfr.events.FileWriteEvent;
+
+import javax.swing.*;
 import javax.swing.text.Document;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
-import java.io.File;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.io.Writer;
+import java.io.*;
 
 public class Controller {
     private View view;
@@ -74,7 +74,22 @@ public class Controller {
 
     public void saveDocument() {}
 
-    public void saveDocumentAs() {}
+    public void saveDocumentAs() {
+        view.selectHtmlTab();
+        JFileChooser jFileChooser = new JFileChooser();
+        jFileChooser.setFileFilter(new HTMLFileFilter());
+        if (jFileChooser.showSaveDialog(view) == JFileChooser.APPROVE_OPTION) {
+            currentFile = jFileChooser.getSelectedFile();
+            view.setTitle(currentFile.getName());
+            try {
+                FileWriter fileWrite = new FileWriter(currentFile);
+                new HTMLEditorKit().write(fileWrite, document, 0, document.getLength());
+            } catch (Exception e) {
+                ExceptionHandler.log(e);
+            }
+        }
+
+    }
 
     public void exit() {
         System.exit(0);
