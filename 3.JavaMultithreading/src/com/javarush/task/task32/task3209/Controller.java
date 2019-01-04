@@ -29,7 +29,9 @@ public class Controller {
         return document;
     }
 
-    public void init() {}
+    public void init() {
+        createNewDocument();
+    }
 
     public void resetDocument() {
         if (document != null) {
@@ -60,7 +62,13 @@ public class Controller {
         return stringWriter.toString();
     }
 
-    public void createNewDocument() {}
+    public void createNewDocument() {
+        view.selectHtmlTab();
+        resetDocument();
+        view.setTitle("HTML редактор");
+        view.resetUndo();
+        currentFile = null;
+    }
 
     public void openDocument() {}
 
