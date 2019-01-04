@@ -21,6 +21,10 @@ public class Controller {
         controller.init();
     }
 
+    public HTMLDocument getDocument() {
+        return document;
+    }
+
     public void init() {}
 
     public void exit() {
