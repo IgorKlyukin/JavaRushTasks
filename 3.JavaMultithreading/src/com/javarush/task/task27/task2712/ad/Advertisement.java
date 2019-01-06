@@ -14,7 +14,7 @@ public class Advertisement {
         this.initialAmount = initialAmount;
         this.hits = hits;
         this.duration = duration;
-        this.amountPerOneDisplaying = initialAmount/hits;
+        this.amountPerOneDisplaying = hits > 0 ? initialAmount / hits : 0;;
     }
 
     public String getName() {
@@ -29,12 +29,17 @@ public class Advertisement {
         return amountPerOneDisplaying;
     }
 
-    public void revalidate() {
+    public void revalidate() throws UnsupportedOperationException {
         if (hits > 0) {
             hits--;
         }
         else {
             throw new UnsupportedOperationException();
         }
+    }
+
+    @Override
+    public String toString() {
+        return name + " is displaying... " + amountPerOneDisplaying + ", " + 1000 * amountPerOneDisplaying / duration;
     }
 }
