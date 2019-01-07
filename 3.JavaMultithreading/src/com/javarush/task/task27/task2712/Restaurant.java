@@ -27,9 +27,10 @@ public class Restaurant {
             list.add(new Tablet(i));
         }
 
+        OrderManager orderManager = new OrderManager();
         for (int i = 0; i < 5; i++) {
-            list.get(i).addObserver(cook1);
-            list.get(i).addObserver(cook2);
+            list.get(i).addObserver(orderManager);
+            list.get(i).addObserver(orderManager);
         }
 
         Thread thread = new Thread(new RandomOrderGeneratorTask(list, ORDER_CREATING_INTERVAL));
