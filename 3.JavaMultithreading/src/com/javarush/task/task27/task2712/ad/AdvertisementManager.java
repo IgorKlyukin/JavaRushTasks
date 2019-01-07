@@ -1,7 +1,10 @@
 package com.javarush.task.task27.task2712.ad;
 
 import com.javarush.task.task27.task2712.ConsoleHelper;
+import com.javarush.task.task27.task2712.statistic.StatisticManager;
+import com.javarush.task.task27.task2712.statistic.event.VideoSelectedEventDataRow;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -30,6 +33,10 @@ public class AdvertisementManager {
                 }
             });
 
+            List<Advertisement> list = new ArrayList<>();
+            long amount = 0;
+            int totalDuration = 0;
+
             for (Advertisement adv : (List<Advertisement>)storage.list()) {
                 if (adv.getDuration() <= timeSeconds) {
                     try {
@@ -38,8 +45,17 @@ public class AdvertisementManager {
                         continue;
                     }
                     timeSeconds -= adv.getDuration();
-                    ConsoleHelper.writeMessage(adv.toString());
+                    list.add(adv);
+                    amount += adv.getAmountPerOneDisplaying();
+                    totalDuration += adv.getDuration();
                 }
+            }
+
+            StatisticManager.getInstance().register(new VideoSelectedEventDataRow(list, amount, totalDuration));
+
+            for (Advertisement adv :
+                    list) {
+                ConsoleHelper.writeMessage(adv.toString());
             }
         }
     }
