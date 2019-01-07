@@ -37,7 +37,7 @@ public class AdvertisementManager {
             long amount = 0;
             int totalDuration = 0;
 
-            for (Advertisement adv : (List<Advertisement>)storage.list()) {
+            for (Advertisement adv : storage.list()) {
                 if (adv.getDuration() <= timeSeconds) {
                     try {
                         adv.revalidate();

@@ -18,7 +18,7 @@ public class AdvertisementStorage {
         return instance;
     }
 
-    public List list() {
+    public List<Advertisement> list() {
         return videos;
     }
 
