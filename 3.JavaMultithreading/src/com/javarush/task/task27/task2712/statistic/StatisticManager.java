@@ -13,11 +13,14 @@ public class StatisticManager {
     private StatisticStorage statisticStorage = new StatisticStorage();
     private Set<Cook> cooks = new HashSet<>();
 
-    private StatisticManager() {
-    }
+    private StatisticManager() {}
 
     public static StatisticManager getInstance() {
         return instance;
+    }
+
+    public Set<Cook> getCooks() {
+        return cooks;
     }
 
     public void register(EventDataRow data){
