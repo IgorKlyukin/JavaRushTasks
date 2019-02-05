@@ -47,26 +47,40 @@ public class Model {
         maxTile = 0;
     }
 
-    private void compressTiles(Tile[] tiles){
-        Arrays.sort(tiles, new Comparator<Tile>() {
-            @Override
-            public int compare(Tile o1, Tile o2) {
-                return o2.value == 0 ? -1 : 0;
-            }
-        });
+    private boolean compressTiles(Tile[] tiles){
+        int count = 0;
+        boolean flag = false;
+        for (int i = 0; i < FIELD_WIDTH; i++)
+            if (tiles[i].value != 0)
+                tiles[count++].value = tiles[i].value;
+        while (count < FIELD_WIDTH) {
+            if (tiles[count].value != 0)
+                flag = true;
+            tiles[count++].value = 0;
+        }
+        return flag;
     }
 
-    private void mergeTiles(Tile[] tiles){
+    private boolean mergeTiles(Tile[] tiles){
         for (int i = 0; i < FIELD_WIDTH - 1; i++) {
             if (tiles[i].value == tiles[i + 1].value) {
-                tiles[i].value *= 2;
-                score += tiles[i].value;
-                if (tiles[i].value > maxTile)
-                    maxTile = tiles[i].value;
-                tiles[i + 1].value = 0;
+                tiles[i + 1].value *= 2;
+                score += tiles[i + 1].value;
+                if (tiles[i + 1].value > maxTile)
+                    maxTile = tiles[i + 1].value;
+                tiles[i].value = 0;
                 i++;
             }
         }
-        compressTiles(tiles);
+        return compressTiles(tiles);
+    }
+
+    public void left() {
+        boolean flag = false;
+        for (int i = 0; i < FIELD_WIDTH; i++) {
+            flag |= compressTiles(gameTiles[i]) | mergeTiles(gameTiles[i]);
+        }
+        if (flag)
+            addTile();
     }
 }
