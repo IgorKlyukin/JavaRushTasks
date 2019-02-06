@@ -1,9 +1,6 @@
 package com.javarush.task.task35.task3513;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Model {
     private static final int FIELD_WIDTH = 4;
@@ -83,4 +80,42 @@ public class Model {
         if (flag)
             addTile();
     }
+
+    public void right() {
+        for (int i = 0; i < FIELD_WIDTH; i++) {
+            turn();
+            if (i == 1)
+                left();
+        }
+    }
+
+    public void up() {
+        for (int i = 0; i < FIELD_WIDTH; i++) {
+            turn();
+            if (i == 0)
+                left();
+        }
+    }
+
+    public void down() {
+        for (int i = 0; i < FIELD_WIDTH; i++) {
+            turn();
+            if (i == 2)
+                left();
+        }
+    }
+
+    private void turn() {
+        for (int i = 0; i < FIELD_WIDTH / 2; i++)
+            for (int j = i; j < FIELD_WIDTH-i-1; j++)
+            {
+                int temp = gameTiles[i][j].value;
+                gameTiles[i][j].value = gameTiles[j][FIELD_WIDTH-1-i].value;
+                gameTiles[j][FIELD_WIDTH-1-i].value = gameTiles[FIELD_WIDTH-1-i][FIELD_WIDTH-1-j].value;
+                gameTiles[FIELD_WIDTH-1-i][FIELD_WIDTH-1-j].value = gameTiles[FIELD_WIDTH-1-j][i].value;
+                gameTiles[FIELD_WIDTH-1-j][i].value = temp;
+            }
+    }
+
+
 }
