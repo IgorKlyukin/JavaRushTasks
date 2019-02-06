@@ -1,5 +1,6 @@
 package com.javarush.task.task35.task3513;
 
+import java.io.FileReader;
 import java.util.*;
 
 public class Model {
@@ -117,5 +118,25 @@ public class Model {
             }
     }
 
+    public Tile[][] getGameTiles() {
+        return gameTiles;
+    }
 
+    public boolean canMove() {
+        for (int i = 0; i < FIELD_WIDTH; i++)
+            for (int j = 0; j < FIELD_WIDTH; j++) {
+                if (gameTiles[i][j].value == 0)
+                    return true;
+                if (j < FIELD_WIDTH - 1 && gameTiles[i][j].value == gameTiles[i][j + 1].value)
+                    return true;
+                if (i < FIELD_WIDTH - 1 && gameTiles[i][j].value == gameTiles[i + 1][j].value)
+                    return true;
+            }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Model model = new Model();
+        model.canMove();
+    }
 }
