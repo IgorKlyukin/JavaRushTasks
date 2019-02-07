@@ -1,6 +1,5 @@
 package com.javarush.task.task35.task3513;
 
-import java.io.FileReader;
 import java.util.*;
 
 public class Model {

@@ -60,4 +60,8 @@ public class Controller extends KeyAdapter {
 
         view.repaint();
     }
+
+    public View getView() {
+        return view;
+    }
 }
