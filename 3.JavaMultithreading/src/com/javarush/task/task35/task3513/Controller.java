@@ -54,8 +54,14 @@ public class Controller extends KeyAdapter {
                     model.down();
                     break;
                 }
-                case KeyEvent.VK_Z:
+                case KeyEvent.VK_Z: {
                     model.rollback();
+                    break;
+                }
+                case KeyEvent.VK_R: {
+                    model.randomMove();
+                    break;
+                }
                 default:
                     break;
             }
