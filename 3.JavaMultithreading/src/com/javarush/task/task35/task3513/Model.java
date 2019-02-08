@@ -183,4 +183,23 @@ public class Model {
                 break;
         }
     }
+
+    public boolean hasBoardChanged() {
+        int sum = 0, sumPeek = 0;
+        Tile[][] tilePeek = previousStates.peek();
+        for (int i = 0; i < FIELD_WIDTH; i++) {
+            for (int j = 0; j < FIELD_WIDTH; j++) {
+                sum += gameTiles[i][j].value;
+                sumPeek +=tilePeek[i][j].value;
+            }
+        }
+        return sum != sumPeek;
+    }
+
+    public MoveEfficiency getMoveEfficiency(Move move) {
+        move.move();
+        MoveEfficiency moveEfficiency = canMove() ? new MoveEfficiency(getEmptyTiles().size(), score, move) : new MoveEfficiency(-1, 0, move);
+        rollback();
+        return moveEfficiency;
+    }
 }
