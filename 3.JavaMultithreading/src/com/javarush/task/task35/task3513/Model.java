@@ -76,15 +76,19 @@ public class Model {
     }
 
     public void left() {
+        if (isSaveNeeded)
+            saveState(gameTiles);
         boolean flag = false;
         for (int i = 0; i < FIELD_WIDTH; i++) {
             flag |= compressTiles(gameTiles[i]) | mergeTiles(gameTiles[i]);
         }
+        isSaveNeeded = true;
         if (flag)
             addTile();
     }
 
     public void right() {
+        saveState(gameTiles);
         for (int i = 0; i < FIELD_WIDTH; i++) {
             turn();
             if (i == 1)
@@ -93,6 +97,7 @@ public class Model {
     }
 
     public void up() {
+        saveState(gameTiles);
         for (int i = 0; i < FIELD_WIDTH; i++) {
             turn();
             if (i == 0)
@@ -101,6 +106,7 @@ public class Model {
     }
 
     public void down() {
+        saveState(gameTiles);
         for (int i = 0; i < FIELD_WIDTH; i++) {
             turn();
             if (i == 2)

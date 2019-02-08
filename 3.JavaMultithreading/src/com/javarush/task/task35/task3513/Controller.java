@@ -31,6 +31,7 @@ public class Controller extends KeyAdapter {
     @Override
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
+
         if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
             resetGame();
         else if (!model.canMove())
@@ -49,8 +50,12 @@ public class Controller extends KeyAdapter {
                     model.up();
                     break;
                 }
-                case KeyEvent.VK_DOWN:
+                case KeyEvent.VK_DOWN: {
                     model.down();
+                    break;
+                }
+                case KeyEvent.VK_Z:
+                    model.rollback();
                 default:
                     break;
             }
