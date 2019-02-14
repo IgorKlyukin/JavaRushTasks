@@ -11,6 +11,8 @@ import java.util.List;
 Построй дерево(1)
 */
 public class CustomTree extends AbstractList<String> implements Cloneable, Serializable {
+    Entry<String> root;
+
     @Override
     public String get(int index) {
         throw new UnsupportedOperationException();
@@ -49,5 +51,27 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
     @Override
     public boolean addAll(int index, Collection<? extends String> c) {
         throw new UnsupportedOperationException();
+    }
+
+    static class Entry<T> implements Serializable{
+        String elementName;
+        int lineNumber;
+        boolean availableToAddLeftChildren, availableToAddRightChildren;
+        Entry<T> parent, leftChild, rightChild;
+
+        public Entry(String elementName) {
+            this.elementName = elementName;
+            this.availableToAddLeftChildren = true;
+            this.availableToAddRightChildren = true;
+        }
+
+        public void checkChildren() {
+            if (leftChild != null) availableToAddLeftChildren = false;
+            if (rightChild != null) availableToAddRightChildren = false;
+        }
+
+        public boolean isAvailableToAddChildren(){
+            return availableToAddLeftChildren || availableToAddRightChildren;
+        }
     }
 }
