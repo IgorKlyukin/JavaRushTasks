@@ -1,7 +1,5 @@
 package com.javarush.task.task20.task2028;
 
-import java.io.Closeable;
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.AbstractList;
 import java.util.Collection;
@@ -13,6 +11,10 @@ import java.util.List;
 public class CustomTree extends AbstractList<String> implements Cloneable, Serializable {
     Entry<String> root;
 
+    public CustomTree() {
+        root = new Entry<>("0");
+    }
+
     @Override
     public String get(int index) {
         throw new UnsupportedOperationException();
@@ -20,12 +22,17 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
 
     @Override
     public int size() {
-        return 0;
+        return root.lineNumber;
     }
 
     @Override
     public String set(int index, String element) {
         throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public boolean add(String s) {
+        return root.add(s);
     }
 
     @Override
@@ -53,6 +60,10 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
         throw new UnsupportedOperationException();
     }
 
+    public String getParent(String s) {
+        return s.equals(root.elementName) ? null : root.getParent(s);
+    }
+
     static class Entry<T> implements Serializable{
         String elementName;
         int lineNumber;
@@ -72,6 +83,51 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
 
         public boolean isAvailableToAddChildren(){
             return availableToAddLeftChildren || availableToAddRightChildren;
+        }
+
+        public boolean add(String s) {
+            if (isAvailableToAddChildren()) {
+                if (leftChild == null) {
+                    leftChild = new Entry<>(s);
+                    leftChild.parent = this;
+                    leftChild.lineNumber = 1;
+                }
+                else {
+                    rightChild = new Entry<>(s);
+                    rightChild.parent = this;
+                    rightChild.lineNumber = 1;
+                }
+                checkChildren();
+            }
+            else {
+                if (Integer.highestOneBit(leftChild.lineNumber) == Integer.highestOneBit(leftChild.lineNumber + 1) || leftChild.lineNumber == rightChild.lineNumber)
+                    leftChild.add(s);
+                else
+                    rightChild.add(s);
+            }
+            lineNumber++;
+            return true;
+        }
+
+        public String getParent(String s) {
+            String string = null;
+
+            if (leftChild != null)
+                if (leftChild.elementName.equals(s))
+                    return elementName;
+                else
+                    string = leftChild.getParent(s);
+
+            if (string != null)
+                return string;
+
+            if (rightChild != null)
+                if (rightChild.elementName.equals(s))
+                    return elementName;
+                else
+                    string = rightChild.getParent(s);
+
+            return string;
         }
     }
 }
