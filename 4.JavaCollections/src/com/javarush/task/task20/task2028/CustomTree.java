@@ -41,8 +41,14 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
     }
 
     @Override
-    public String remove(int index) {
-        throw new UnsupportedOperationException();
+    public boolean remove(Object o) {
+        if (o instanceof String) {
+            if (o.toString().equals(root.elementName))
+                return false;
+            return root.remove((String) o) > 0;
+        }
+        else
+            throw new UnsupportedOperationException();
     }
 
     @Override
@@ -128,6 +134,40 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
                     string = rightChild.getParent(s);
 
             return string;
+        }
+
+        public int remove(String s) {
+            int flag = 0;
+
+            if (leftChild != null)
+                if (leftChild.elementName.equals(s)) {
+                    flag = leftChild.lineNumber;
+                    leftChild = null;
+                    availableToAddLeftChildren = true;
+                    lineNumber -= flag;
+                }
+                else {
+                    flag = leftChild.remove(s);
+                    if (flag > 0)
+                        lineNumber -= flag;
+                }
+
+            if (flag > 0)
+                return flag;
+
+            if (rightChild != null)
+                if (rightChild.elementName.equals(s)) {
+                    flag = rightChild.lineNumber;
+                    rightChild = null;
+                    availableToAddRightChildren = true;
+                    lineNumber -= flag;
+                }
+                else {
+                    flag = rightChild.remove(s);
+                    if (flag > 0)
+                        lineNumber -= flag;
+                }
+            return flag;
         }
     }
 }
