@@ -29,7 +29,7 @@ public class Field {
     public void print() {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                System.out.print(matrix[i][j] + " ");
+                System.out.print(matrix[i][j] == 0 ? "." : "X");
             }
             System.out.println();
         }
