@@ -31,7 +31,6 @@ public class Field {
         return matrix;
     }
 
-
     /**
      * Метод возвращает значение, которое содержится в матрице с координатами (x,y)
      * Если координаты за пределами матрицы, метод возвращает null.
@@ -106,30 +105,28 @@ public class Field {
      * Удаляем заполненные линии
      */
     public void removeFullLines() {
-        boolean flag;
-        ArrayList<Integer> zeroList = new ArrayList<>();
+        //Создаем список для хранения линий
+        ArrayList<int[]> lines = new ArrayList<int[]>();
+
+        //Копируем все непустые линии в список.
         for (int i = 0; i < height; i++) {
-            flag = false;
+            //подсчитываем количество единиц в строке - просто суммируем все ее значения
+            int count = 0;
             for (int j = 0; j < width; j++) {
-                if (matrix[i][j] != 1)
-                    break;
-                if (j == width - 1)
-                    flag = true;
+                count += matrix[i][j];
             }
-            if (flag)
-                zeroList.add(i);
+
+            //Если сумма строки не равна ее ширине - добавляем в список
+            if (count != width)
+                lines.add(matrix[i]);
         }
 
-        for (int i = 0; i < zeroList.size(); i++) {
-            for (int j = zeroList.get(i); j > 0; j--) {
-                    matrix[j] = matrix[j - 1];
-            }
-            matrix[0] = new int[width];
-        }
-        //Например так:
-        //Создаем список для хранения линий
-        //Копируем все непустые линии в список.
         //Добавляем недостающие строки в начало списка.
+        while (lines.size() < height) {
+            lines.add(0, new int[width]);
+        }
+
         //Преобразуем список обратно в матрицу
+        matrix = lines.toArray(new int[height][width]);
     }
 }
