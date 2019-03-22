@@ -48,4 +48,12 @@ public abstract class BaseObject {
     public void draw() {
 
     }
+
+    public void die() {
+        isAlive = false;
+    }
+
+    public boolean isIntersect(BaseObject o) {
+        return Math.sqrt(Math.pow(x - o.x, 2) + Math.pow(y - o.y, 2)) < Double.max(radius, o.radius);
+    }
 }
