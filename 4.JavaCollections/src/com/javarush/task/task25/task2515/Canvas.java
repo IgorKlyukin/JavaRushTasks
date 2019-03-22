@@ -43,4 +43,30 @@ public class Canvas {
             }
         }
     }
+
+    public void clear() {
+        int height = matrix.length;
+        int width = matrix[0].length;
+
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                setPoint(j, i, ' ');
+            }
+        }
+    }
+
+    public void print() {
+        int height = matrix.length;
+        int width = matrix[0].length;
+
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                System.out.print(matrix[j][i]);
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println();
+    }
 }
