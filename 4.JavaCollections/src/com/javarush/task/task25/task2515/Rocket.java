@@ -1,12 +1,16 @@
 package com.javarush.task.task25.task2515;
 
-public class Rocket extends BaseObject{
+/**
+ * Класс для объектов-ракета
+ */
+public class Rocket extends BaseObject {
+
     public Rocket(double x, double y) {
         super(x, y, 1);
     }
 
     /**
-     * Отрисовываем себя на холсте.
+     * Метод рисует свой объект на "канвасе".
      */
     @Override
     public void draw(Canvas canvas) {

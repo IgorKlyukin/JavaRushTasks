@@ -51097,3 +51097,48 @@ java.lang.IllegalArgumentException: button doesn't exist 0
 2019-03-22 15:35:04 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
 2019-03-22 15:35:04 INFO  ApacheHttpClient.testConnection(203) - result = true
 2019-03-22 15:35:04 INFO  ApacheHttpClient.getTask(477) - responseCode = 200
+2019-03-22 15:35:39 INFO  ApacheHttpClient.sendEvent(525) - responseCode = 200
+2019-03-22 15:35:40 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:35:40 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:35:51 INFO  ApacheHttpClient.getWebResourceAsStream(492) - responseCode = 200
+2019-03-22 15:35:51 INFO  ApacheHttpClient.getFilteredTasks(329) - responseCode = 200
+2019-03-22 15:35:53 INFO  ApacheHttpClient.getTaskTemplateInfo(346) - responseCode = 200
+2019-03-22 15:35:57 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:35:57 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:35:59 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:35:59 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:36:00 INFO  ApacheHttpClient.getWebResourceAsStream(492) - responseCode = 200
+2019-03-22 15:36:39 INFO  ApacheHttpClient.sendEvent(525) - responseCode = 200
+2019-03-22 15:37:39 INFO  ApacheHttpClient.sendEvent(525) - responseCode = 200
+2019-03-22 15:38:21 INFO  JavaRushTasksProjectComponent.projectOpened(76) - ---------- Project JavaRushTasks opened ----------
+2019-03-22 15:38:21 INFO  JavaRushTasksProjectComponent.projectOpened(77) - ---------- Version 3.28 ----------
+
+2019-03-22 15:38:21 INFO  ApacheHttpClient.createAsyncHttpClient(130) - Выбрано 1 прокси. Тип : DIRECT
+2019-03-22 15:38:21 INFO  ApacheHttpClient.<init>(88) - ApacheHttpClient проинстанциирован успешно.
+2019-03-22 15:38:22 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:38:22 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:38:24 INFO  ApacheHttpClient.login(233) - Ожидание ответа сервера.
+2019-03-22 15:38:24 INFO  ApacheHttpClient.login(233) - Ожидание ответа сервера.
+2019-03-22 15:38:24 INFO  ApacheHttpClient.login(233) - Ожидание ответа сервера.
+2019-03-22 15:38:24 INFO  ApacheHttpClient.login(237) - responseCode = 200
+2019-03-22 15:38:24 INFO  ApacheHttpClient.login(268) - JSESSIONID OK
+2019-03-22 15:38:24 INFO  ApacheHttpClient.refreshUserInfo(296) - responseCode = 200
+2019-03-22 15:38:24 INFO  ApacheHttpClient.refreshUserInfo(302) - Информация о пользователе получена.
+2019-03-22 15:38:24 INFO  ApacheHttpClient.startGA(33) - GAService запущен.
+2019-03-22 15:38:24 INFO  AbstractRestApiClient.startService(70) - EventsService запущен.
+2019-03-22 15:38:30 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:38:30 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:38:32 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:38:32 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:38:33 INFO  ApacheHttpClient.getWebResourceAsStream(492) - responseCode = 200
+2019-03-22 15:38:38 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:38:38 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:38:42 INFO  ApacheHttpClient.testConnection(188) - responseCode = 200
+2019-03-22 15:38:42 INFO  ApacheHttpClient.testConnection(203) - result = true
+2019-03-22 15:39:25 INFO  ApacheHttpClient.sendEvent(525) - responseCode = 200
+2019-03-22 15:40:24 INFO  ApacheHttpClient.sendEvent(525) - responseCode = 200
+2019-03-22 15:40:31 INFO  ApacheHttpClient.getWebResourceAsStream(492) - responseCode = 200
+2019-03-22 15:40:31 INFO  ApacheHttpClient.getTask(477) - responseCode = 200
+2019-03-22 15:40:32 INFO  ApacheHttpClient.getWebResourceAsStream(492) - responseCode = 200
+2019-03-22 15:40:32 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-03-22 15:40:33 INFO  ApacheHttpClient.getTask(477) - responseCode = 200
