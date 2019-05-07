@@ -2,6 +2,7 @@ package com.javarush.task.task33.task3310;
 
 import com.javarush.task.task33.task3310.strategy.*;
 import com.javarush.task.task33.task3310.tests.FunctionalTest;
+import com.javarush.task.task33.task3310.tests.SpeedTest;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,6 +30,9 @@ public class Solution {
         test.testHashMapStorageStrategy();
         test.testOurHashBiMapStorageStrategy();
         test.testOurHashMapStorageStrategy();
+
+        SpeedTest speedTest = new SpeedTest();
+        speedTest.testHashMapStorage();
     }
 
     public static Set<Long> getIds(Shortener shortener, Set<String> strings) {
