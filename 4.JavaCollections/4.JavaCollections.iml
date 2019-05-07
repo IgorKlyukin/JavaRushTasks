@@ -10,5 +10,6 @@
     <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
     <orderEntry type="library" name="org.slf4j:slf4j-api:1.7.26" level="project" />
     <orderEntry type="library" name="com.google.guava:guava:26.0-jre" level="project" />
+    <orderEntry type="library" name="org.apache.commons:commons-collections4:4.3" level="project" />
   </component>
 </module>

@@ -9,16 +9,18 @@ import java.util.Set;
 
 public class Solution {
     public static void main(String[] args) {
-        HashMapStorageStrategy hashMapStorageStrategy = new HashMapStorageStrategy();
-        testStrategy(hashMapStorageStrategy, 10000);
-        OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
-        testStrategy(ourHashMapStorageStrategy, 10000);
-        FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
-        testStrategy(fileStorageStrategy, 10000);
+//        HashMapStorageStrategy hashMapStorageStrategy = new HashMapStorageStrategy();
+//        testStrategy(hashMapStorageStrategy, 10000);
+//        OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
+//        testStrategy(ourHashMapStorageStrategy, 10000);
+//        FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
+//        testStrategy(fileStorageStrategy, 10000);
         OurHashBiMapStorageStrategy ourHashBiMapStorageStrategy = new OurHashBiMapStorageStrategy();
         testStrategy(ourHashBiMapStorageStrategy, 10000);
         HashBiMapStorageStrategy hashBiMapStorageStrategy = new HashBiMapStorageStrategy();
         testStrategy(hashBiMapStorageStrategy, 10000);
+        DualHashBidiMapStorageStrategy dualHashBidiMapStorageStrategy = new DualHashBidiMapStorageStrategy();
+        testStrategy(dualHashBidiMapStorageStrategy, 10000);
     }
 
     public static Set<Long> getIds(Shortener shortener, Set<String> strings) {
