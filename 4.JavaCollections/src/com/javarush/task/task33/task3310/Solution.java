@@ -1,6 +1,7 @@
 package com.javarush.task.task33.task3310;
 
 import com.javarush.task.task33.task3310.strategy.*;
+import com.javarush.task.task33.task3310.tests.FunctionalTest;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,12 +16,19 @@ public class Solution {
 //        testStrategy(ourHashMapStorageStrategy, 10000);
 //        FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
 //        testStrategy(fileStorageStrategy, 10000);
-        OurHashBiMapStorageStrategy ourHashBiMapStorageStrategy = new OurHashBiMapStorageStrategy();
-        testStrategy(ourHashBiMapStorageStrategy, 10000);
-        HashBiMapStorageStrategy hashBiMapStorageStrategy = new HashBiMapStorageStrategy();
-        testStrategy(hashBiMapStorageStrategy, 10000);
-        DualHashBidiMapStorageStrategy dualHashBidiMapStorageStrategy = new DualHashBidiMapStorageStrategy();
-        testStrategy(dualHashBidiMapStorageStrategy, 10000);
+//        OurHashBiMapStorageStrategy ourHashBiMapStorageStrategy = new OurHashBiMapStorageStrategy();
+//        testStrategy(ourHashBiMapStorageStrategy, 10000);
+//        HashBiMapStorageStrategy hashBiMapStorageStrategy = new HashBiMapStorageStrategy();
+//        testStrategy(hashBiMapStorageStrategy, 10000);
+//        DualHashBidiMapStorageStrategy dualHashBidiMapStorageStrategy = new DualHashBidiMapStorageStrategy();
+//        testStrategy(dualHashBidiMapStorageStrategy, 10000);
+        FunctionalTest test = new FunctionalTest();
+        test.testDualHashBidiMapStorageStrategy();
+        test.testFileStorageStrategy();
+        test.testHashBiMapStorageStrategy();
+        test.testHashMapStorageStrategy();
+        test.testOurHashBiMapStorageStrategy();
+        test.testOurHashMapStorageStrategy();
     }
 
     public static Set<Long> getIds(Shortener shortener, Set<String> strings) {
