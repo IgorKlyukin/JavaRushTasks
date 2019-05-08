@@ -1,5 +1,6 @@
 package com.javarush.task.task39.task3913;
 
+import com.javarush.task.task39.task3913.query.DateQuery;
 import com.javarush.task.task39.task3913.query.IPQuery;
 import com.javarush.task.task39.task3913.query.UserQuery;
 
@@ -10,7 +11,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class LogParser implements IPQuery, UserQuery {
+public class LogParser implements IPQuery, UserQuery, DateQuery {
     private Path logDir;
     private ArrayList<Log> logs = new ArrayList<>();
 
@@ -258,6 +259,102 @@ public class LogParser implements IPQuery, UserQuery {
                 filteredRecords) {
             if (log.event.equals(Event.DONE_TASK) && (task == 0 || log.eventInt == task))
                 set.add(log.user);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<Date> getDatesForUserAndEvent(String user, Event event, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(event) && log.user.equals(user))
+                set.add(log.date);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<Date> getDatesWhenSomethingFailed(Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.status.equals(Status.FAILED))
+                set.add(log.date);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<Date> getDatesWhenErrorHappened(Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.status.equals(Status.ERROR))
+                set.add(log.date);
+        }
+        return set;
+    }
+
+    @Override
+    public Date getDateWhenUserLoggedFirstTime(String user, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new TreeSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.user.equals(user) && log.event.equals(Event.LOGIN))
+                set.add(log.date);
+        }
+        return set.isEmpty() ? null : set.iterator().next();
+    }
+
+    @Override
+    public Date getDateWhenUserSolvedTask(String user, int task, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new TreeSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.user.equals(user) && log.eventInt == task && log.event.equals(Event.SOLVE_TASK))
+                set.add(log.date);
+        }
+        return set.isEmpty() ? null : set.iterator().next();
+    }
+
+    @Override
+    public Date getDateWhenUserDoneTask(String user, int task, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new TreeSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.user.equals(user) && log.eventInt == task && log.event.equals(Event.DONE_TASK))
+                set.add(log.date);
+        }
+        return set.isEmpty() ? null : set.iterator().next();
+    }
+
+    @Override
+    public Set<Date> getDatesWhenUserWroteMessage(String user, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(Event.WRITE_MESSAGE) && log.user.equals(user))
+                set.add(log.date);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<Date> getDatesWhenUserDownloadedPlugin(String user, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<Date> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(Event.DOWNLOAD_PLUGIN) && log.user.equals(user))
+                set.add(log.date);
         }
         return set;
     }
