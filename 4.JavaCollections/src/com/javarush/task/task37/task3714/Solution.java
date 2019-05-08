@@ -12,6 +12,9 @@ import java.util.TreeMap;
 */
 public class Solution {
     public static void main(String[] args) throws IOException {
+        TestRoman testRoman = new TestRoman();
+        testRoman.testRomanToInteger();
+
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Input a roman number to be converted to decimal: ");
         String romanString = bufferedReader.readLine();

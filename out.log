@@ -29236,3 +29236,13 @@ Caused by: java.io.IOException: Удаленный хост принудител
 2019-05-08 11:22:18 INFO  ApacheHttpClient.completed(28) - responseCode = 200
 2019-05-08 11:22:18 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
 2019-05-08 11:22:18 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-08 11:22:40 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-08 11:22:40 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-08 11:22:51 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-08 11:23:51 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-08 11:24:51 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-08 11:25:51 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-08 11:26:16 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-08 11:26:16 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-08 11:26:51 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-08 11:27:51 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
