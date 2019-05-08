@@ -1,6 +1,7 @@
 package com.javarush.task.task39.task3913;
 
 import com.javarush.task.task39.task3913.query.IPQuery;
+import com.javarush.task.task39.task3913.query.UserQuery;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -9,7 +10,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class LogParser implements IPQuery {
+public class LogParser implements IPQuery, UserQuery {
     private Path logDir;
     private ArrayList<Log> logs = new ArrayList<>();
 
@@ -73,193 +74,191 @@ public class LogParser implements IPQuery {
         logs.add(log);
     }
 
+    private Set<Log> getFilteredEntries(Date after, Date before) {
+        Set<Log> filteredRecords = new HashSet<>();
+        for (Log log : logs) {
+            if (isBetween(log.date, after, before)) {
+                filteredRecords.add(log);
+            }
+        }
+        return filteredRecords;
+    }
+
+    private boolean isBetween(Date date, Date after, Date before) {
+        return (after == null || date.after(after) || date.equals(after)) &&
+                (before == null || date.before(before) || date.equals(before));
+    }
+
     @Override
     public int getNumberOfUniqueIPs(Date after, Date before) {
-        Set<String> set = new HashSet<>();
-        if (after == null && before == null)
-            for (Log log :
-                    logs) {
-                set.add(log.ip);
-            }
-        else if (after == null)
-            for (Log log :
-                    logs) {
-                if (log.date.equals(before) || log.date.before(before))
-                    set.add(log.ip);
-            }
-        else if (before == null)
-            for (Log log :
-                    logs) {
-                if (log.date.equals(after) || log.date.after(after))
-                    set.add(log.ip);
-            }
-        else
-            for (Log log :
-                    logs) {
-                if (log.date.equals(after) || log.date.equals(before) || log.date.before(before) && log.date.after(after))
-                    set.add(log.ip);
-            }
-            
-        return set.size();
+        return getUniqueIPs(after, before).size();
     }
 
     @Override
     public Set<String> getUniqueIPs(Date after, Date before) {
-        Set<String> set = new HashSet<>();
-        ArrayList<String> list = new ArrayList<>();
-        
-        if (after == null && before == null)
-            for (Log log :
-                    logs) {
-                set.add(log.ip);
-                list.add(log.ip);
-            }
-        else if (after == null)
-            for (Log log :
-                    logs) {
-                if (log.date.equals(before) || log.date.before(before)) {
-                    set.add(log.ip);
-                    list.add(log.ip);
-                }
-            }
-        else if (before == null)
-            for (Log log :
-                    logs) {
-                if (log.date.equals(after) || log.date.after(after)) {
-                    set.add(log.ip);
-                    list.add(log.ip);
-                }
-            }
-        else
-            for (Log log :
-                    logs) {
-                if (log.date.equals(after) || log.date.equals(before) || log.date.before(before) && log.date.after(after)) {
-                    set.add(log.ip);
-                    list.add(log.ip);
-                }
-            }
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> ips = new HashSet<>();
 
-//        for (String s :
-//                new HashSet<>(set)) {
-//            if (Collections.frequency(list, s) > 1) {
-//                set.remove(s);
-//            }
-//        }
-            
-        return set;
+        for (Log log : filteredRecords) {
+            ips.add(log.ip);
+        }
+
+        return ips;
     }
 
     @Override
     public Set<String> getIPsForUser(String user, Date after, Date before) {
-        Set<String> set = new HashSet<>();
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> ips = new HashSet<>();
 
-        if (after == null && before == null)
-            for (Log log :
-                    logs) {
-                if (log.user.equals(user))
-                    set.add(log.ip);
-            }
-        else if (after == null)
-            for (Log log :
-                    logs) {
-                if (log.user.equals(user))
-                    if (log.date.equals(before) || log.date.before(before)) {
-                        set.add(log.ip);
-                    }
-            }
-        else if (before == null)
-            for (Log log :
-                    logs) {
-                if (log.user.equals(user))
-                    if (log.date.equals(after) || log.date.after(after)) {
-                        set.add(log.ip);
-                    }
-            }
-        else
-            for (Log log :
-                    logs) {
-                if (log.user.equals(user))
-                    if (log.date.equals(after) || log.date.equals(before) || log.date.before(before) && log.date.after(after)) {
-                        set.add(log.ip);
-                    }
-            }
+        for (Log log : filteredRecords) {
+            if (log.user.equals(user))
+                ips.add(log.ip);
+        }
 
-        return set;
+        return ips;
     }
 
     @Override
     public Set<String> getIPsForEvent(Event event, Date after, Date before) {
-        Set<String> set = new HashSet<>();
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> ips = new HashSet<>();
 
-        if (after == null && before == null)
-            for (Log log :
-                    logs) {
-                if (log.event.equals(event))
-                    set.add(log.ip);
-            }
-        else if (after == null)
-            for (Log log :
-                    logs) {
-                if (log.event.equals(event))
-                    if (log.date.equals(before) || log.date.before(before)) {
-                        set.add(log.ip);
-                    }
-            }
-        else if (before == null)
-            for (Log log :
-                    logs) {
-                if (log.event.equals(event))
-                    if (log.date.equals(after) || log.date.after(after)) {
-                        set.add(log.ip);
-                    }
-            }
-        else
-            for (Log log :
-                    logs) {
-                if (log.event.equals(event))
-                    if (log.date.equals(after) || log.date.equals(before) || log.date.before(before) && log.date.after(after)) {
-                        set.add(log.ip);
-                    }
-            }
+        for (Log log : filteredRecords) {
+            if (log.event.equals(event))
+                ips.add(log.ip);
+        }
 
-        return set;
+        return ips;
     }
 
     @Override
     public Set<String> getIPsForStatus(Status status, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> ips = new HashSet<>();
+
+        for (Log log : filteredRecords) {
+            if (log.status.equals(status))
+                ips.add(log.ip);
+        }
+
+        return ips;
+    }
+
+    @Override
+    public Set<String> getAllUsers() {
         Set<String> set = new HashSet<>();
+        for (Log log :
+                logs) {
+            set.add(log.user);
+        }
+        return set;
+    }
 
-        if (after == null && before == null)
-            for (Log log :
-                    logs) {
-                if (log.status.equals(status))
-                    set.add(log.ip);
-            }
-        else if (after == null)
-            for (Log log :
-                    logs) {
-                if (log.status.equals(status))
-                    if (log.date.equals(before) || log.date.before(before)) {
-                        set.add(log.ip);
-                    }
-            }
-        else if (before == null)
-            for (Log log :
-                    logs) {
-                if (log.status.equals(status))
-                    if (log.date.equals(after) || log.date.after(after)) {
-                        set.add(log.ip);
-                    }
-            }
-        else
-            for (Log log :
-                    logs) {
-                if (log.status.equals(status))
-                    if (log.date.equals(after) || log.date.equals(before) || log.date.before(before) && log.date.after(after)) {
-                        set.add(log.ip);
-                    }
-            }
+    @Override
+    public int getNumberOfUsers(Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
 
+        Set<String> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            set.add(log.user);
+        }
+        return set.size();
+    }
+
+    @Override
+    public int getNumberOfUserEvents(String user, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+
+        Set<Event> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.user.equals(user))
+                set.add(log.event);
+        }
+        return set.size();
+    }
+
+    @Override
+    public Set<String> getUsersForIP(String ip, Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.ip.equals(ip))
+                set.add(log.user);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<String> getLoggedUsers(Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(Event.LOGIN))
+                set.add(log.user);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<String> getDownloadedPluginUsers(Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(Event.DOWNLOAD_PLUGIN) && log.status.equals(Status.OK))
+                set.add(log.user);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<String> getWroteMessageUsers(Date after, Date before) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(Event.WRITE_MESSAGE) && log.status.equals(Status.OK))
+                set.add(log.user);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<String> getSolvedTaskUsers(Date after, Date before) {
+        return getSolvedTaskUsers(after, before, 0);
+    }
+
+    @Override
+    public Set<String> getSolvedTaskUsers(Date after, Date before, int task) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(Event.SOLVE_TASK) && (task == 0 || log.eventInt == task))
+                set.add(log.user);
+        }
+        return set;
+    }
+
+    @Override
+    public Set<String> getDoneTaskUsers(Date after, Date before) {
+        return getDoneTaskUsers(after, before, 0);
+    }
+
+    @Override
+    public Set<String> getDoneTaskUsers(Date after, Date before, int task) {
+        Set<Log> filteredRecords = getFilteredEntries(after, before);
+        Set<String> set = new HashSet<>();
+        for (Log log :
+                filteredRecords) {
+            if (log.event.equals(Event.DONE_TASK) && (task == 0 || log.eventInt == task))
+                set.add(log.user);
+        }
         return set;
     }
 
