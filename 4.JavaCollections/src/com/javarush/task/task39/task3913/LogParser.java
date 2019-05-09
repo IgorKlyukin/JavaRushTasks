@@ -479,26 +479,58 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
     @Override
     public Set<Object> execute(String query) {
         String[] s = query.split(" ");
+        if (s.length > 2) {
+            if (s.length > 6)
+                s = normalQuery(s);
+            s[s.length - 1] = s[s.length - 1].split("\"")[1];
+        }
         Set<Object> set = null;
+
         try {
-            Method T = Log.class.getDeclaredMethod(s[0]+firstUpperCase(s[1]));
-            set = sqlExecute(s, T, Log.class.getDeclaredField(s[1]).getType());
+            Method T = Log.class.getDeclaredMethod(s[0]+firstUpperCase(s[1])),
+                    T2 = s.length > 2 ? Log.class.getDeclaredMethod(s[0]+firstUpperCase(s[3])) : null;
+            Class<?> F = Log.class.getDeclaredField(s[1]).getType(),
+                    F2 = s.length > 2 ? Log.class.getDeclaredField(s[3]).getType() : null;
+            set = sqlExecute(T, F, T2, F2, s[s.length - 1]);
         } catch (NoSuchMethodException|NoSuchFieldException e) {
             e.printStackTrace();
         }
+
         return set;
     }
 
-    private <T> Set<T> sqlExecute(String[] s, Method f, T a) {
+    private String[] normalQuery(String[] s) {
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 5, n = s.length; i < n; i++)
+            sb.append(s[i]).append(" ");
+
+        String[] temp = new String[6];
+
+        for (int i = 0; i < 5; i++) {
+            temp[i] = s[i];
+        }
+
+        temp[5] = sb.toString().trim();
+
+        return temp;
+    }
+
+    private <T, V> Set<T> sqlExecute(Method f, T a, Method f2, V a2, String s) {
         Set<T> set = new HashSet<>();
+
         for (Log log :
                 logs) {
             try {
-                set.add((T)f.invoke(log,null));
-            } catch (IllegalAccessException|InvocationTargetException e) {
+                if (f2 == null
+                        || (a2.equals(Date.class) && ((V)f2.invoke(log,null)).equals(new SimpleDateFormat("d.M.yyyy HH:mm:ss").parse(s)))
+                        || ((V)f2.invoke(log,null)).toString().equals(s))
+                    set.add((T)f.invoke(log,null));
+            } catch (IllegalAccessException|InvocationTargetException|ParseException e) {
                 e.printStackTrace();
             }
         }
+
         return set;
     }
 
