@@ -11,6 +11,6 @@ public class Solution {
         System.out.println(logParser.getIPsForUser("Amigo", null, null));
         System.out.println(logParser.getIPsForEvent(Event.DONE_TASK, null, null));
         System.out.println(logParser.getIPsForStatus(Status.OK, null, null));
-        System.out.println(logParser.execute("get event for date = \"03.01.2014 03:45:23\""));
+        System.out.println(logParser.execute("get ip for user = \"Eduard Petrovich Morozko\" and date between \"11.12.2013 0:00:00\" and \"03.01.2014 23:59:59\"."));
     }
 }

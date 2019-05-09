@@ -478,6 +478,20 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 
     @Override
     public Set<Object> execute(String query) {
+        ArrayList<Log> logs = this.logs;
+        if (query.contains("and")){
+            String[] s = query.substring(query.indexOf(" and")).split("\"");
+            query = query.substring(0, query.indexOf(" and"));
+
+            SimpleDateFormat simple = new SimpleDateFormat("d.M.yyyy HH:mm:ss");
+            try {
+                Set<Log> filteredRecords = getFilteredEntries(new Date(simple.parse(s[1]).getTime() + 1),
+                                                                    new Date (simple.parse(s[3]).getTime() - 1));
+                logs = new ArrayList<>(filteredRecords);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
         String[] s = query.split(" ");
         if (s.length > 2) {
             if (s.length > 6)
@@ -491,7 +505,7 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
                     T2 = s.length > 2 ? Log.class.getDeclaredMethod(s[0]+firstUpperCase(s[3])) : null;
             Class<?> F = Log.class.getDeclaredField(s[1]).getType(),
                     F2 = s.length > 2 ? Log.class.getDeclaredField(s[3]).getType() : null;
-            set = sqlExecute(T, F, T2, F2, s[s.length - 1]);
+            set = sqlExecute(T, F, T2, F2, s[s.length - 1], logs);
         } catch (NoSuchMethodException|NoSuchFieldException e) {
             e.printStackTrace();
         }
@@ -507,16 +521,15 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 
         String[] temp = new String[6];
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++)
             temp[i] = s[i];
-        }
 
         temp[5] = sb.toString().trim();
 
         return temp;
     }
 
-    private <T, V> Set<T> sqlExecute(Method f, T a, Method f2, V a2, String s) {
+    private <T, V> Set<T> sqlExecute(Method f, T a, Method f2, V a2, String s, ArrayList<Log> logs) {
         Set<T> set = new HashSet<>();
 
         for (Log log :
