@@ -11,5 +11,6 @@ public class Solution {
         System.out.println(logParser.getIPsForUser("Amigo", null, null));
         System.out.println(logParser.getIPsForEvent(Event.DONE_TASK, null, null));
         System.out.println(logParser.getIPsForStatus(Status.OK, null, null));
+        System.out.println(logParser.execute("get status"));
     }
 }

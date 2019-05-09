@@ -1,18 +1,18 @@
 package com.javarush.task.task39.task3913;
 
-import com.javarush.task.task39.task3913.query.DateQuery;
-import com.javarush.task.task39.task3913.query.EventQuery;
-import com.javarush.task.task39.task3913.query.IPQuery;
-import com.javarush.task.task39.task3913.query.UserQuery;
+import com.javarush.task.task39.task3913.query.*;
 
 import java.io.*;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
+public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
     private Path logDir;
     private ArrayList<Log> logs = new ArrayList<>();
 
@@ -474,6 +474,37 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
             }
         }
         return map;
+    }
+
+    @Override
+    public Set<Object> execute(String query) {
+        String[] s = query.split(" ");
+        Set<Object> set = null;
+        try {
+            Method T = Log.class.getDeclaredMethod(s[0]+firstUpperCase(s[1]));
+            set = sqlExecute(s, T, Log.class.getDeclaredField(s[1]).getType());
+        } catch (NoSuchMethodException|NoSuchFieldException e) {
+            e.printStackTrace();
+        }
+        return set;
+    }
+
+    private <T> Set<T> sqlExecute(String[] s, Method f, T a) {
+        Set<T> set = new HashSet<>();
+        for (Log log :
+                logs) {
+            try {
+                set.add((T)f.invoke(log,null));
+            } catch (IllegalAccessException|InvocationTargetException e) {
+                e.printStackTrace();
+            }
+        }
+        return set;
+    }
+
+    private String firstUpperCase(String word){
+        if(word == null || word.isEmpty()) return ""; //или return word;
+        return word.substring(0, 1).toUpperCase() + word.substring(1);
     }
 
     private class Log {
