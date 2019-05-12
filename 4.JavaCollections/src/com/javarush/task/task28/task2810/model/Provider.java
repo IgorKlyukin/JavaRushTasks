@@ -2,8 +2,9 @@ package com.javarush.task.task28.task2810.model;
 
 import com.javarush.task.task28.task2810.vo.Vacancy;
 
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
 
 public class Provider {
     private Strategy strategy;
@@ -17,6 +18,6 @@ public class Provider {
     }
     
     public List<Vacancy> getJavaVacancies(String searchString) {
-        return new ArrayList<>();
+        return strategy == null ? Collections.emptyList() : strategy.getVacancies(searchString);
     }
 }
