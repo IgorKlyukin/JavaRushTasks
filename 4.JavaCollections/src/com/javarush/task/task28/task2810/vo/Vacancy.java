@@ -70,4 +70,16 @@ public class Vacancy {
     public int hashCode() {
         return Objects.hash(getTitle(), getSalary(), getCity(), getCompanyName(), getSiteName(), getUrl());
     }
+
+    @Override
+    public String toString() {
+        return "Vacancy{" +
+                "title='" + title + '\'' +
+                ", salary='" + salary + '\'' +
+                ", city='" + city + '\'' +
+                ", companyName='" + companyName + '\'' +
+                ", siteName='" + siteName + '\'' +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }
