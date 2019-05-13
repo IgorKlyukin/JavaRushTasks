@@ -34888,3 +34888,732 @@ Caused by: java.io.IOException: Удаленный хост принудител
 2019-05-13 07:12:59 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
 2019-05-13 07:13:00 INFO  ApacheHttpClient.completed(28) - responseCode = 200
 2019-05-13 07:13:00 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-13 07:13:23 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:13:23 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:13:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:14:07 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 07:14:07 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-13 07:14:09 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:14:09 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:14:10 INFO  ApacheHttpClient.getTaskTemplateInfo(341) - responseCode = 200
+2019-05-13 07:14:11 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:14:11 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:14:12 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:14:12 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:14:12 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 07:14:15 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:14:15 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:14:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:15:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:16:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:17:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:18:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:19:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:20:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:21:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:22:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:23:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:24:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:25:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:26:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:27:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:28:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:29:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:30:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:31:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:32:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:33:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:33:51 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:33:51 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:33:54 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:33:54 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:34:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:35:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:36:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:37:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:38:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:39:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:40:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:41:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:42:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:43:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:44:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:45:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:46:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:47:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:48:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:49:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:50:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:51:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:52:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:53:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:54:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:55:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:56:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:57:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:58:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 07:58:51 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 07:58:51 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 07:59:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:00:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:01:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:02:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:03:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:04:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:05:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:06:50 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:28:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:29:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:30:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:31:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:32:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:33:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:34:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:35:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:36:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:37:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:38:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:39:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:40:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:41:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:42:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:43:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:44:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:44:16 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 08:44:16 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 08:45:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:46:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:47:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:48:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:49:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:50:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:51:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:52:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:53:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:54:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:55:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:56:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:57:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:58:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 08:59:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:00:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:01:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:02:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:03:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:04:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:05:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:06:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:07:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:08:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:09:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:09:15 INFO  ApacheHttpClient.testConnection(193) - responseCode = 503
+2019-05-13 09:09:15 WARN  ApacheHttpClient.testConnection(198) - HTTP/1.1 503 Service Temporarily Unavailable [Server: nginx, Date: Mon, 13 May 2019 06:23:46 GMT, Content-Type: text/html, Content-Length: 311, Connection: keep-alive, ETag: "5cd90afe-137"] [Content-Length: 311,Chunked: false]
+2019-05-13 09:09:15 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-13 09:10:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:11:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:12:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:13:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:14:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:15:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:16:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:17:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:18:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 405
+2019-05-13 09:19:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:20:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:21:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:22:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:23:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:24:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:25:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:26:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:27:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:48:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:49:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:50:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:51:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:52:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:53:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:54:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:54:42 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 09:54:42 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 09:55:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:56:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:57:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:58:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 09:59:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:00:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:01:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:02:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:03:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:04:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:05:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:06:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:07:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:08:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:09:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:10:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:11:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:12:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:13:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:14:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:15:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:16:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:17:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:18:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:19:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:19:42 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 10:19:42 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 10:20:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:21:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:22:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:23:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:24:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:25:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:26:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:27:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:28:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:29:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:30:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:31:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:32:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:33:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:34:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:35:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:36:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:37:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:38:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:39:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:40:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:41:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:42:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:43:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:44:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:44:42 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 10:44:42 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 10:45:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:46:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 10:47:41 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:09:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:10:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:11:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:12:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:13:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:14:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:15:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:16:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:17:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:18:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:19:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:20:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:21:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:22:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:23:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:24:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:25:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:26:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:27:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:28:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:29:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:30:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:30:07 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 11:30:07 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 11:31:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:32:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:33:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:34:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:35:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:36:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:37:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:38:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:39:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:40:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:41:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:42:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:43:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:44:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:45:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:46:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:47:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:48:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:49:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:50:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:51:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:52:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:53:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:54:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:55:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:55:07 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 11:55:07 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 11:56:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:57:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:58:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 11:59:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:00:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:01:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:02:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:03:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:04:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:05:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:06:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:07:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:08:06 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:29:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:30:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:31:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:32:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:33:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:34:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:35:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:36:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:37:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:38:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:39:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:40:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:40:33 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 12:40:33 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 12:41:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:42:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:43:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:44:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:45:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:46:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:47:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:48:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:49:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:50:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:51:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:52:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:53:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:54:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:55:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:56:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:57:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:58:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 12:59:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:00:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:01:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:02:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:03:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:04:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:05:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:05:33 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 13:05:33 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 13:06:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:07:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:08:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:09:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:10:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:11:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:12:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:13:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:14:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:15:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:16:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:17:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:18:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:19:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:20:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:21:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:22:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:23:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:24:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:25:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:26:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:27:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:28:32 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:49:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:50:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:50:59 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 13:50:59 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 13:51:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:52:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:53:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:54:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:55:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:56:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:57:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:58:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 13:59:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:00:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:01:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:02:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:03:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:04:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:05:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:06:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:07:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:08:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:09:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:10:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:11:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:12:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:13:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:14:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:15:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:15:58 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 14:15:58 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 14:16:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:17:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:18:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:19:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:20:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:21:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:22:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 14:24:16 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:25:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:26:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:27:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:28:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:29:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:30:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:31:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:32:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:33:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:34:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:35:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:36:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:37:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:38:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:39:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:40:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:41:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:41:18 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection timed out: no further information
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-13 14:41:18 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-13 14:42:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:43:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:44:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:45:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:46:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:47:17 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 14:48:09 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection timed out: no further information
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-13 14:48:09 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-13 16:31:44 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:31:57 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:40 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:49:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:50:59 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:51:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:52:53 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:53:59 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:54:13 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.UnknownHostException: javarush.ru
+	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
+	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:191)
+	... 29 more
+2019-05-13 16:54:13 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-13 16:54:51 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:55:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:56:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:57:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:58:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 16:59:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:00:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:01:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:02:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:03:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:04:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:05:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:06:24 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.UnknownHostException: javarush.ru
+	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
+	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:191)
+	... 29 more
+2019-05-13 17:06:24 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-13 17:06:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:07:47 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-13 17:08:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:09:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:10:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:11:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:12:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:13:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:14:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:15:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:16:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:17:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:18:48 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:19:38 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-13 17:19:38 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-13 17:19:42 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:19:43 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-13 17:19:43 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:19:44 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-13 17:19:47 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:20:07 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:20:07 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-13 17:20:07 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:20:08 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-13 17:20:27 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:20:27 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-13 17:20:27 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:20:28 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-13 17:20:47 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-13 17:21:01 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:21:02 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-13 17:21:02 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-13 17:21:04 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-13 17:21:04 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
