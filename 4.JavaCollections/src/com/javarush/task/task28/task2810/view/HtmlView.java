@@ -7,10 +7,19 @@ import java.util.List;
 
 public class HtmlView implements View {
     private Controller controller;
+    private final String filePath = "./4.JavaCollections/src/" +
+                                        this.getClass().getPackage().getName().replace('.', '/') +
+                                        "/vacancies.html";
 
     @Override
     public void update(List<Vacancy> vacancies) {
-        System.out.println(vacancies.size());
+        try {
+            String updatedFileContent = getUpdatedFileContent(vacancies);
+            updateFile(updatedFileContent);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -21,4 +30,10 @@ public class HtmlView implements View {
     public void userCitySelectEmulationMethod() {
         controller.onCitySelect("Odessa");
     }
+
+    private String getUpdatedFileContent(List<Vacancy> list) {
+        return null;
+    }
+
+    private void updateFile(String s) {}
 }
