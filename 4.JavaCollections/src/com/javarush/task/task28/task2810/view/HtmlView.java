@@ -2,6 +2,9 @@ package com.javarush.task.task28.task2810.view;
 
 import com.javarush.task.task28.task2810.Controller;
 import com.javarush.task.task28.task2810.vo.Vacancy;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 import java.io.*;
 import java.util.List;
@@ -33,7 +36,39 @@ public class HtmlView implements View {
     }
 
     private String getUpdatedFileContent(List<Vacancy> list) {
-        return null;
+        Document document = null;
+        try {
+            document = getDocument();
+            Element element = document.getElementsByClass("template").first();
+
+            Element copyElement = element.clone();
+            copyElement.removeAttr("style");
+            copyElement.removeClass("template");
+
+            for (Element e:
+                 document.getElementsByAttributeValue("class", "vacancy")) {
+                e.remove();
+            }
+
+            for (Vacancy v :
+                    list) {
+                Element outerHtml = copyElement.clone();
+
+                outerHtml.getElementsByClass("city").first().text(v.getCity());
+                outerHtml.getElementsByClass("companyName").first().text(v.getCompanyName());
+                outerHtml.getElementsByClass("salary").first().text(v.getSalary());
+
+                Element eTmp = outerHtml.getElementsByTag("a").first();
+                eTmp.text(v.getTitle());
+                eTmp.attr("href", v.getUrl());
+
+                element.before(outerHtml);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "Some exception occurred";
+        }
+        return document.toString();
     }
 
     private void updateFile(String s) {
@@ -44,5 +79,9 @@ public class HtmlView implements View {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    protected Document getDocument() throws IOException {
+        return Jsoup.parse(new File(filePath), "UTF-8");
     }
 }
