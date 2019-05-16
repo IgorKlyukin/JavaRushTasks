@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.ResourceBundle;
 
 public class ConsoleHelper {
-    private static ResourceBundle res = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.common_en");
+    private static ResourceBundle res = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "common_en");
 
     private static BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
 
@@ -89,5 +89,9 @@ public class ConsoleHelper {
             writeMessage(res.getString("invalid.data"));
         }
         return o;
+    }
+
+    public static void printExitMessage(){
+        writeMessage("By By, my love!");
     }
 }
