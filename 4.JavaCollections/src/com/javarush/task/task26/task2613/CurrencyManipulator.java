@@ -30,4 +30,8 @@ public class CurrencyManipulator {
         }
         return n;
     }
+
+    public boolean hasMoney(){
+        return getTotalAmount() > 0;
+    }
 }
