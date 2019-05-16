@@ -1,11 +1,13 @@
 package com.javarush.task.task26.task2613.command;
 
+import com.javarush.task.task26.task2613.CashMachine;
 import com.javarush.task.task26.task2613.ConsoleHelper;
 import com.javarush.task.task26.task2613.exception.InterruptOperationException;
 
+import java.util.ResourceBundle;
+
 public class LoginCommand implements Command {
-    private static final String CARD_NUMBER = "123456789012";
-    private static final String PIN_CODE = "1234";
+    private ResourceBundle validCreditCards = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.verifiedCards");
 
     @Override
     public void execute() throws InterruptOperationException {
@@ -18,7 +20,7 @@ public class LoginCommand implements Command {
 
             if (card.length() == 12 && card.matches("^\\d+$")
                     && pin.length() == 4 && pin.matches("^\\d+$")
-                    && card.equals(CARD_NUMBER) && pin.equals(PIN_CODE)) {
+                    && validCreditCards.containsKey(card) && validCreditCards.getString(card).equals(pin)) {
                 ConsoleHelper.writeMessage("Congratulations!");
                 break;
             }
