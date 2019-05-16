@@ -1,5 +1,6 @@
 package com.javarush.task.task26.task2613.command;
 
+import com.javarush.task.task26.task2613.CashMachine;
 import com.javarush.task.task26.task2613.ConsoleHelper;
 import com.javarush.task.task26.task2613.CurrencyManipulator;
 import com.javarush.task.task26.task2613.CurrencyManipulatorFactory;
@@ -8,16 +9,20 @@ import com.javarush.task.task26.task2613.exception.NotEnoughMoneyException;
 
 import java.util.Collections;
 import java.util.Map;
+import java.util.ResourceBundle;
 import java.util.TreeMap;
 
 class WithdrawCommand implements Command {
+    private ResourceBundle res = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.withdraw_en");
+
     @Override
     public void execute() throws InterruptOperationException {
+        ConsoleHelper.writeMessage(res.getString("before"));
         String code = ConsoleHelper.askCurrencyCode();
         CurrencyManipulator cM = CurrencyManipulatorFactory.getManipulatorByCurrencyCode(code);
         int a;
         while (true) {
-            ConsoleHelper.writeMessage("Please, enter count money.");
+            ConsoleHelper.writeMessage(res.getString("specify.amount"));
             String s = ConsoleHelper.readString();
             if (s.matches("^\\d+$")) {
                 a = Integer.parseInt(s);
@@ -29,19 +34,19 @@ class WithdrawCommand implements Command {
                                 newMap.entrySet()) {
                             ConsoleHelper.writeMessage("\t" + entry.getKey() + " - " + entry.getValue());
                         }
-                        ConsoleHelper.writeMessage("GREAT!!! Good!!! Ok!)");
+                        ConsoleHelper.writeMessage(String.format(res.getString("success.format"),a,cM.getCurrencyCode()));
                         break;
                     } catch (NotEnoughMoneyException e) {
-                        ConsoleHelper.writeMessage("Nomination is low. Sorry.");
+                        ConsoleHelper.writeMessage(res.getString("exact.amount.not.available"));
                         continue;
                     }
                 }
                 else {
-                    ConsoleHelper.writeMessage("Money is low. Sorry.");
+                    ConsoleHelper.writeMessage(res.getString("not.enough.money"));
                     continue;
                 }
             }
-            ConsoleHelper.writeMessage("You enter: " + s + ". It's no number!");
+            ConsoleHelper.writeMessage(res.getString("specify.not.empty.amount"));
         }
     }
 }

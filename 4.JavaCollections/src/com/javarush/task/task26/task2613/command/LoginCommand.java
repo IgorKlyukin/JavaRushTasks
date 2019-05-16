@@ -8,23 +8,28 @@ import java.util.ResourceBundle;
 
 public class LoginCommand implements Command {
     private ResourceBundle validCreditCards = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.verifiedCards");
+    private ResourceBundle res = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.login_en");
 
     @Override
     public void execute() throws InterruptOperationException {
+        ConsoleHelper.writeMessage(res.getString("before"));
         while (true){
-            ConsoleHelper.writeMessage("Please, enter two number.");
-            ConsoleHelper.writeMessage("Card number:");
+            ConsoleHelper.writeMessage(res.getString("specify.data"));
             String card = ConsoleHelper.readString();
-            ConsoleHelper.writeMessage("Pin code:");
             String pin = ConsoleHelper.readString();
 
             if (card.length() == 12 && card.matches("^\\d+$")
-                    && pin.length() == 4 && pin.matches("^\\d+$")
-                    && validCreditCards.containsKey(card) && validCreditCards.getString(card).equals(pin)) {
-                ConsoleHelper.writeMessage("Congratulations!");
-                break;
+                    && pin.length() == 4 && pin.matches("^\\d+$")) {
+                    if (validCreditCards.containsKey(card) && validCreditCards.getString(card).equals(pin)) {
+                        ConsoleHelper.writeMessage(String.format(res.getString("success.format"), card));
+                        break;
+                    }
+                    else
+                        ConsoleHelper.writeMessage(String.format(res.getString("not.verified.format"), card));
             }
-            ConsoleHelper.writeMessage("You enter: Card = " + card + " and Pin = " + pin + ". Error");
+            else
+                ConsoleHelper.writeMessage(res.getString("try.again.with.details"));
+            ConsoleHelper.writeMessage(res.getString("try.again.or.exit"));
         }
     }
 }
