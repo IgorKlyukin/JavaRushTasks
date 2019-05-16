@@ -12,6 +12,7 @@ public class CashMachine {
         String[] strings = ConsoleHelper.getValidTwoDigits(s);
         try {
             currencyManipulator.addAmount(Integer.parseInt(strings[0]), Integer.parseInt(strings[1]));
+            currencyManipulator.getTotalAmount();
         } catch (NullPointerException e) {
         }
     }
