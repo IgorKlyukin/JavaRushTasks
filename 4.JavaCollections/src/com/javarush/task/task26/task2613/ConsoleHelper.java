@@ -34,17 +34,34 @@ public class ConsoleHelper {
     }
 
     public static String[] getValidTwoDigits(String currencyCode) {
-        String[] s = new String[2];
+        String[] strings;
         while (true){
             writeMessage("Please, enter two positive integer.");
-            String str = readString();
-            if (str.matches("^\\d+\\s\\d+$")) {
-                s = str.split(" ");
+            String s = readString();
+            if (s.matches("^\\d+\\s\\d+$")) {
+                strings = s.split(" ");
                 break;
             }
             else
-                writeMessage("You enter: " + str +". It`s not two positive integer.");
+                writeMessage("You enter: " + s + ". It`s not two positive integer.");
         }
-        return s;
+        return strings;
+    }
+
+    public static Operation askOperation() {
+        Operation o;
+        while (true) {
+            writeMessage("Please, enter number operation.");
+            String s = readString();
+            if (s.matches("\\d")) {
+                try {
+                    o = Operation.getAllowableOperationByOrdinal(Integer.parseInt(s));
+                    break;
+                } catch (IllegalArgumentException e) {
+                }
+            }
+            writeMessage("You enter: " + s + ". Numbers don't exist.");
+        }
+        return o;
     }
 }
