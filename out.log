@@ -39744,3 +39744,332 @@ Caused by: java.net.UnknownHostException: javarush.ru
 2019-05-17 12:11:38 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
 2019-05-17 12:11:41 INFO  ApacheHttpClient.completed(28) - responseCode = 200
 2019-05-17 12:11:41 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-17 12:12:00 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 12:12:00 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 12:12:10 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-17 12:12:10 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-17 12:12:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:13:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:14:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:15:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:16:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:17:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:18:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:19:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:20:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:21:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:22:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:23:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:24:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:25:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:26:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:26:47 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 12:26:47 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 12:26:50 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 12:26:50 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 12:27:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:28:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:29:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:29:23 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 12:29:23 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 12:30:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:31:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:32:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:33:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:34:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:35:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:36:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:37:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:38:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:39:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:40:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:41:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:42:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:43:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:44:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:45:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:46:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:47:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:48:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:49:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:50:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:51:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:52:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:53:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:54:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:54:26 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 12:54:26 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 12:55:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:56:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:57:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:58:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 12:59:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:00:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:01:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:02:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:03:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:04:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:05:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:06:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:07:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:07:52 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 13:07:52 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 13:07:54 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 13:07:54 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 13:07:58 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-17 13:07:58 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-17 13:08:05 INFO  ApacheHttpClient.getTaskTemplateInfo(341) - responseCode = 200
+2019-05-17 13:08:07 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 13:08:07 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 13:08:08 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 13:08:08 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 13:08:09 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-17 13:08:21 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:29:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:30:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:31:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:31:52 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 13:31:52 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 13:32:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:33:42 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 13:33:42 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 13:33:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:34:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:35:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:36:23 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 13:36:23 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 13:36:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-17 13:38:05 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:39:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:39:54 ERROR ApacheHttpClient.getServerAvailabilityStatus(551) - Error while checking server availability. : java.util.concurrent.ExecutionException
+2019-05-17 13:39:54 WARN  ValidateButton.isServerAvailable(78) - The server is unavailable. Wait a little, restart IntelliJ IDEA and try again.
+2019-05-17 13:40:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:40:18 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection timed out: no further information
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-17 13:40:18 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-17 13:40:49 ERROR ApacheHttpClient.getServerAvailabilityStatus(551) - Error while checking server availability. : java.util.concurrent.ExecutionException
+2019-05-17 13:40:49 WARN  ValidateButton.isServerAvailable(78) - The server is unavailable. Wait a little, restart IntelliJ IDEA and try again.
+2019-05-17 13:41:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:42:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:43:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:44:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:45:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:46:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:47:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:47:21 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection timed out: no further information
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-17 13:47:21 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-17 13:47:44 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection timed out: no further information
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-17 13:47:44 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-17 13:48:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:49:07 ERROR ApacheHttpClient.processExceptionSendEvent(109) - (super) : Error while sending the event to the server.
+2019-05-17 13:49:29 ERROR ApacheHttpClient.testConnection(204) - Error while checking the connection with the server 
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection timed out: no further information
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:560)
+	at com.homework.plugin.client.ApacheHttpClient.testConnection(ApacheHttpClient.java:192)
+	at com.homework.plugin.TestEditorProvider.accept(TestEditorProvider.java:31)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.lambda$getProviders$0(FileEditorProviderManagerImpl.java:48)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:970)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:57)
+	at com.intellij.openapi.fileEditor.impl.FileEditorProviderManagerImpl.getProviders(FileEditorProviderManagerImpl.java:44)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.dumbModeFinished(FileEditorManagerImpl.java:187)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.access$300(FileEditorManagerImpl.java:98)
+	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$2.lambda$exitDumbMode$0(FileEditorManagerImpl.java:156)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:435)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:419)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:403)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:747)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:696)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:391)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-17 13:49:29 INFO  ApacheHttpClient.testConnection(208) - result = false
+2019-05-17 13:49:36 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2019-05-17 13:49:36 ERROR ApacheHttpClient.getTask(475) - Error while downloading the task. Be sure you have a network connection and try again. : java.util.concurrent.ExecutionException
+2019-05-17 13:49:36 ERROR ApacheHttpClient.getTask(475) - Error while downloading the task. Be sure you have a network connection and try again. : java.util.concurrent.ExecutionException
+2019-05-17 13:49:36 ERROR ApacheHttpClient.getTask(475) - Error while downloading the task. Be sure you have a network connection and try again. : java.util.concurrent.ExecutionException
+2019-05-17 13:49:36 ERROR ApacheHttpClient.getTask(475) - Error while downloading the task. Be sure you have a network connection and try again. : java.util.concurrent.ExecutionException
+2019-05-17 13:49:36 ERROR ApacheHttpClient.getTask(475) - Error while downloading the task. Be sure you have a network connection and try again. : java.util.concurrent.ExecutionException
+2019-05-17 13:49:36 ERROR ApacheHttpClient.getTask(475) - Error while downloading the task. Be sure you have a network connection and try again. : java.util.concurrent.ExecutionException
+2019-05-17 19:28:54 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2019-05-17 19:28:54 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.30 ----------
+
+2019-05-17 19:28:54 INFO  ApacheHttpClient.createAsyncHttpClient(135) - 1 proxies selected. Type: DIRECT
+2019-05-17 19:28:54 INFO  ApacheHttpClient.<init>(93) - ApacheHttpClient was successfully instantiated.
+2019-05-17 19:28:56 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 19:28:56 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 19:28:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(585) - Waiting for server response.
+2019-05-17 19:28:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(585) - Waiting for server response.
+2019-05-17 19:28:57 INFO  ApacheHttpClient.refreshUserInfo(293) - responseCode = 200
+2019-05-17 19:28:57 INFO  ApacheHttpClient.refreshUserInfo(299) - User information received.
+2019-05-17 19:28:57 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2019-05-17 19:28:57 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2019-05-17 19:29:08 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 19:29:08 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 19:29:11 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 19:29:11 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 19:29:16 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-17 19:29:27 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 19:29:27 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 19:29:30 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 19:29:30 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 19:29:32 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-17 19:29:32 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-17 19:29:37 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-17 19:29:38 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-17 19:29:40 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-17 19:29:40 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-17 19:29:41 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-17 19:29:58 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
