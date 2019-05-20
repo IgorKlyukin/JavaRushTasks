@@ -43757,3 +43757,34 @@ java.net.UnknownHostException: javarush.ru
 2019-05-20 09:36:47 INFO  ApacheHttpClient.completed(28) - responseCode = 200
 2019-05-20 09:36:47 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
 2019-05-20 09:36:56 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-20 09:37:13 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-20 09:37:13 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-20 09:37:56 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-20 09:38:56 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-20 09:38:56 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-20 09:38:56 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-20 09:38:58 INFO  ApacheHttpClient.getTaskTemplateInfo(341) - responseCode = 200
+2019-05-20 09:38:59 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-20 09:38:59 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-20 09:39:00 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-20 09:39:00 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-20 09:39:01 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-20 09:39:56 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-20 09:40:56 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-20 09:41:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-20 09:41:58 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-20 09:41:58 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-20 09:42:57 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-20 09:43:16 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-20 09:43:16 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-20 09:43:17 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-20 09:43:18 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-20 09:43:18 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-20 09:43:21 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-20 09:43:21 WARN  PluginUtil.getCurrentTask(71) - Error while retrieving the task key.
+2019-05-20 09:43:21 WARN  PluginUtil.getCurrentDirectory(102) - Error while getting the current directory.
+2019-05-20 09:43:21 WARN  PluginUtil.getCurrentDirectory(102) - Error while getting the current directory.
+2019-05-20 09:43:21 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-20 09:43:22 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-20 09:43:23 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-20 09:43:23 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
